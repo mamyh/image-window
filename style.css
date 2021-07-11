@@ -28,6 +28,7 @@
     width: 50%;
     height: 100%;
     background-color: black;
+    border-radius: 5px;
 }
 .window::before{
     left:0;
