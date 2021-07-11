@@ -22,29 +22,23 @@
     border-radius: 5px;
 }
 
-.window::after{
+.window::after,.window::before{
     content:'';
     Position:absolute;
     top:0;
-    right:0;
     width: 50%;
     height: 100%;
     background-color: black;
     transform:scaleX(0);
-    transform-origin: right;
     transition: transform .5s linear;
 }
 .window::before{
-    content:'';
-    background-color: black;
-    width:50%;
-    height: 100%;
-    position: absolute;
-    top:0;
     left:0;
-    transform:scaleX(0);
     transform-origin: left;
-    transition:transform .5s linear;
+}
+.window::after{
+   right:0;
+   transform-origin: right;
 }
 
  .window:hover::before,.window:hover::after{
